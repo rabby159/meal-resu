@@ -14,11 +14,11 @@
         tailwind.config = {
           theme: {
             extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
+              backgroundImage:{
+                'banner-bg': "url(./images/banner_1.png)",
+              },
+            },
+          },
         }
     </script>
     <!-- font awesome  -->
@@ -37,16 +37,34 @@
 </head>
 <body>
     <header>
+        <!-- nav section start  -->
         <nav class="max-w-screen-lg mx-auto py-4">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <a class=""><img src="./images/Tasty_HUT.png" alt=""></a>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn btn-warning">Sign Up</a>
+                  <a class="btn btn-warning text-lg font-bold">Sign Up</a>
                 </div>
               </div>
         </nav>
+        <!-- nav section end  -->
+
+        <!-- banner section start  -->
+        <section>
+            <div class="hero min-h-[calc(100vh-96px)] bg-banner-bg ">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1 class="mb-5 text-4xl lg:text-7xl font-bold font-poppins">Taste Our Delicious <br>  Best Foods</h1>
+                    <p class="mb-5 text-lg">There are many variations of passages of Lorem Ipsum available, <br> but the majority have suffered alteration in some form, by injected humou.</p>
+                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                    <button class="btn btn-warning text-lg font-bol mt-4 lg:ml-3">Get Started</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- banner section end  -->
     </header>
     <main>
 
